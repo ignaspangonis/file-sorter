@@ -1,0 +1,22 @@
+{
+  "name": "file-sorter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsm index.ts",
+    "build": "tsc index.ts --outDir dist --esModuleInterop",
+    "build:start": "tsc index.ts --outDir dist --esModuleInterop && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cli-color": "^2.0.2",
+    "@types/node": "^18.16.1",
+    "tsm": "^2.3.0"
+  },
+  "dependencies": {
+    "cli-color": "^2.0.3"
+  }
+}
