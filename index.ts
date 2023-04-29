@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import { readdirSync, statSync, mkdirSync, renameSync } from 'fs'
 import { extname } from 'path'
 import colors from 'cli-color'

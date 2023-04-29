@@ -24,6 +24,13 @@ pnpm start [folderPath] -- [--recursive]
 - `--recursive` (optional): Organize files recursively in folders.
 - `folderPath` (optional): Specify the path to the folder to organize. If not provided, the script will try to organize files in the `/Users/{username}/Desktop/test/` directory.
 
+
+If you have `ts-node` installed globally, you can also run the file with:
+
+```bash
+./index.ts
+```
+
 ## Example
 
 ```bash
