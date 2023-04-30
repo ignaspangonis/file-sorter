@@ -130,9 +130,8 @@ const organizeFiles = (folderPath: string) => {
 
 try {
   organizeFiles(folderToOrganize)
+  console.log(green('Files organized successfully!'))
 } catch (error: unknown) {
   console.error(red((error as Error).message))
   process.exit(1)
 }
-
-console.log(green('Files organized successfully!'))
