@@ -1,6 +1,6 @@
 # File Organizer Script
 
-This is a TypeScript script (using Node.js APIs) for macOS that organizes your files and folders automatically based on file type.
+This is a TypeScript script (using Node.js APIs) that organizes your files and folders automatically based on file type.
 
 ## Installation
 1. Install Node.js and pnpm (preferred) or npm.
