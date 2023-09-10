@@ -46,14 +46,6 @@ type MoveFileOptions = {
   destFolderPath: string
 }
 
-/**
- * Moves a file from one folder to another. If the destination folder doesn't exist, it will be created.
- * @param fileName Name of the file to move
- * @param srcFolderPath Path to the folder where the file currently is
- * @param destFolderPath Path to the folder where the file should be moved to
- * @returns void
- * @throws Error if either of the paths are invalid (don't end with a slash)
- */
 const moveFile = ({ fileName, srcFolderPath, destFolderPath }: MoveFileOptions) => {
   validateFolderPathFormat(srcFolderPath)
   validateFolderPathFormat(destFolderPath)
@@ -84,12 +76,6 @@ const destFolderByExtension: Record<string, DestFolder> = {
   '.txt': 'Text',
 }
 
-/**
- * Organizes files in a folder by moving them to their respective destination folders.
- * @param folderPath Path to the folder to organize
- * @returns void
- * @throws Error if the `folderPath` is invalid (doesn't end with a slash)
- */
 const organizeFiles = (folderPath: string) => {
   validateFolderPathFormat(folderPath)
 
@@ -100,7 +86,6 @@ const organizeFiles = (folderPath: string) => {
     const isFolder = statSync(path).isDirectory()
 
     if (isFolder) {
-      // If needed, recursively organize contents of the folder
       if (isRecursive) organizeFiles(`${path}/`)
       return
     }
